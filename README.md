@@ -1,7 +1,7 @@
 ![CI](https://github.com/LateMigo/log_analyzer/actions/workflows/ci.yml/badge.svg)
 # log-analyzer
 
-Prosty skrypt w Bashu, który analizuje logi SSH (`auth.log`) i pokazuje, z jakich adresów IP było najwięcej nieudanych prób logowania. Przydaje się do szybkiego wykrywania prób brute-force.
+Prosty skrypt w Bashu, który analizuje logi SSH (`auth.log`) i pokazuje, z jakich adresów IP było najwięcej nieudanych prób logowania. Przydaje się do szybkiego wykrywania prób brute-force. CI (GitHub Actions) uruchamia shellcheck oraz test na sample.log przy każdym pushu i pull requeście.
 
 ## Jak to działa
 
@@ -57,7 +57,6 @@ Test uruchamia analizator na `sample.log` i porównuje wynik z `expected.txt`. W
 
 - opcja progu (pokazuj tylko IP z co najmniej N próbami)
 - liczenie nazw użytkowników, na które próbowano się logować
-- GitHub Actions: automatyczne uruchamianie testów
 - Docker: obraz z narzędziem i publikacja w GitHub Container Registry
 - wersja w C do porównania wydajności
 
