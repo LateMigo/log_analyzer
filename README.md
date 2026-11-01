@@ -1,4 +1,4 @@
-![CI](https://github.com/LateMigo/log-analyzer/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/LateMigo/log_analyzer/actions/workflows/ci.yml/badge.svg)
 # log-analyzer
 
 Prosty skrypt w Bashu, który analizuje logi SSH (`auth.log`) i pokazuje, z jakich adresów IP było najwięcej nieudanych prób logowania. Przydaje się do szybkiego wykrywania prób brute-force.
