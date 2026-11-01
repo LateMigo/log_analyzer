@@ -9,4 +9,4 @@ if [ ! -f "$1" ]; then
  exit 1
 fi
 
-grep "Failed password" "$1" | awk '{print $(NF-2)}' | sort | uniq -c | sort -nr
+grep "Failed password" "$1" | awk '{print $(NF-3)}' | sort | uniq -c | sort -nr
